@@ -44,3 +44,27 @@ sbhar@Harshitha:~/linux_practice$
 2025-11-17T09:55:45.471014+00:00 Harshitha wsl-pro-service[175]: #033[36mINFO#033[0m Reconnecting to Windows host in 60 seconds
 2025-11-17T09:55:45.471091+00:00 Harshitha wsl-pro-service[175]: #033[37mDEBUG#033[0m Updated systemd status to "Not connected: waiting to retry"
 2025-11-17T09:55:49.091895+00:00 Harshitha systemd-resolved[155]: Clock change detected. Flushing caches.
+
+
+#Day 9
+
+1️⃣ Filter for a specific event (using grep)
+You start by extracting only the rows that match an event, such as CALL_DROP or ATTACH_REQ.
+
+2️⃣ Extract a specific field (using awk)
+From the filtered rows, you pull out a column—such as IMSI, RSRP, or CELL.
+
+3️⃣ Normalize the field (using sed)
+You clean or format the extracted field—for example, removing whitespace or scientific-notation labels.
+
+4️⃣ Sort and count unique values (sort + uniq -c)
+You order the values and count how many times each appears (e.g., count call drops per IMSI).
+
+5️⃣ Add a header and optionally limit the output (head)
+You label the results for readability and optionally show only top entries.
+
+6️⃣ Extract only IMSIs with CALL_DROP events
+You isolate unique subscribers who experienced call drops.
+
+7️⃣ Advanced filtering: CALL_DROP with bad RSRP (< –105 dBm)
+You filter for severe signal-quality failures using numeric comparison.
