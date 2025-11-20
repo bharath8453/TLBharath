@@ -68,3 +68,37 @@ You isolate unique subscribers who experienced call drops.
 
 7️⃣ Advanced filtering: CALL_DROP with bad RSRP (< –105 dBm)
 You filter for severe signal-quality failures using numeric comparison.
+
+#Day10
+
+Today, I focused on learning and practicing shell scripting fundamentals and explored various Linux command-line operations. This included writing scripts for user validation, file handling, system performance monitoring, and basic automation tasks. Below is a summary of what I covered:
+
+1. Shell Scripting Basics
+Understanding #!/bin/bash shebang
+Using variables, conditional statements (if, else), loops, and case
+Taking user input with read
+Using regular expressions for validation
+Writing simple automation scripts
+
+2. User Input Validation Script
+Created a script where:
+Name must contain only alphabets (A–Z / a–z)
+Age must be a valid number between 1 and 100
+If input is invalid → print appropriate error message
+Used regex matching with [[ ]] and numeric conditions
+
+3. File Operations Using Shell Script
+Practiced file handling commands such as:
+Creating files using touc
+Creating directories using mkdir
+Moving and renaming files with mv
+Deleting files with rm
+Listing files using ls
+Writing automation using case statements for menu-driven operations
+
+4. System Performance & Monitoring
+Developed a script to collect and store system information into a file:
+CPU details using lscpu
+Memory usage using free -h
+Disk usage using df -h
+Logged everything into system_info.txt
