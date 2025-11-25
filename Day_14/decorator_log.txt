@@ -1,0 +1,2 @@
+2025-11-25 15:48:46,330 - Function 'fetch_api' called with args=('https://jsonplaceholder.typicode.com/todos/1',) kwargs={}
+2025-11-25 15:48:46,783 - Function 'add' called with args=(5, 10) kwargs={}
