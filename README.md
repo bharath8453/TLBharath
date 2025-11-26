@@ -102,3 +102,18 @@ CPU details using lscpu
 Memory usage using free -h
 Disk usage using df -h
 Logged everything into system_info.txt
+
+#Day 15
+On Day 15, I learned about JSON and YAML formats and their importance in networking and automation environments.
+JSON (JavaScript Object Notation) is widely used for data exchange between network devices, APIs, and servers.
+YAML (Yet Another Markup Language) is mainly used for configuration files due to its readability and clean structure.
+Both formats play a critical role in network configuration, cloud management, and orchestration tools.
+In networking, JSON is commonly used in REST APIs and device communication.
+YAML is used in tools like Ansible, Kubernetes, and Docker configuration files.
+This project focuses on converting JSON to YAML and YAML to JSON using Python.
+The conversion is useful when integrating systems that accept different data formats.
+The project uses Python libraries such as json and PyYAML for parsing and formatting data.
+Safe functions are used to avoid loading unsafe data during conversion.
+Output files are neatly formatted for better readability and debugging.
+These conversions improve compatibility between network applications and automation workflows.
+This project demonstrates a basic understanding of structured data handling in networking systems.
